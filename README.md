@@ -172,7 +172,7 @@ SystemInfo/
 ### 1. 📥 Clonar el Repositorio
 
 ```bash
-git clone https://github.com/Antoni30/SystemInfo.git
+git clone https://github.com/EdJGM/SystemInfo.git
 cd SystemInfo
 ```
 
@@ -847,7 +847,7 @@ limit_req_zone $binary_remote_addr zone=api:10m rate=10r/s;
 
 2. **Configurar Upstream**
    ```bash
-   git remote add upstream https://github.com/Antoni30/SystemInfo.git
+   git remote add upstream https://github.com/EdJGM/SystemInfo.git
    git fetch upstream
    ```
 
@@ -920,7 +920,7 @@ const CPUMonitor: React.FC<Props> = ({ data }) => {
 
 ### 🐛 Reportar Bugs
 
-Usa el [template de issue](https://github.com/Antoni30/SystemInfo/issues/new?template=bug_report.md):
+Usa el [template de issue](https://github.com/EdJGM/SystemInfo/issues/new?template=bug_report.md):
 
 ```markdown
 **Describe el bug**
@@ -945,7 +945,7 @@ Si aplica, agregar capturas.
 
 ### ✨ Sugerir Funcionalidades
 
-Usa el [template de feature](https://github.com/Antoni30/SystemInfo/issues/new?template=feature_request.md):
+Usa el [template de feature](https://github.com/EdJGM/SystemInfo/issues/new?template=feature_request.md):
 
 ```markdown
 **¿Tu solicitud está relacionada con un problema?**
@@ -978,7 +978,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ### 👨‍💻 Equipo de Desarrollo
 
-- **[Antoni30](https://github.com/EdJGM)** - *Desarrollo Principal & Arquitectura*
+- **[EdJGM](https://github.com/EdJGM)** - *Desarrollo Principal & Arquitectura*
   - Backend Python (Flask + WebSocket)
   - Base de datos PostgreSQL
   - Integración de APIs

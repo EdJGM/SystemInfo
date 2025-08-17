@@ -20,13 +20,13 @@ Este proyecto se adhiere al código de conducta de [Contributor Covenant](https:
 
 ### 🐛 Reportar Bugs
 
-1. Busca primero en [Issues existentes](https://github.com/Antoni30/SystemInfo/issues)
+1. Busca primero en [Issues existentes](https://github.com/EdJGM/SystemInfo/issues)
 2. Si no existe, crea un nuevo issue usando el template de bug report
 3. Incluye toda la información solicitada en el template
 
 ### ✨ Sugerir Funcionalidades
 
-1. Revisa las [Issues](https://github.com/Antoni30/SystemInfo/issues) y [Discussions](https://github.com/Antoni30/SystemInfo/discussions)
+1. Revisa las [Issues](https://github.com/EdJGM/SystemInfo/issues)
 2. Crea un nuevo issue usando el template de feature request
 3. Explica claramente el problema que resuelve tu propuesta
 
@@ -55,11 +55,11 @@ Este proyecto se adhiere al código de conducta de [Contributor Covenant](https:
 
 ```bash
 # 1. Fork y clonar
-git clone https://github.com/tu-usuario/SystemInfo.git
+git clone https://github.com/EdJGM/SystemInfo.git
 cd SystemInfo
 
 # 2. Configurar upstream
-git remote add upstream https://github.com/Antoni30/SystemInfo.git
+git remote add upstream https://github.com/EdJGM/SystemInfo.git
 
 # 3. Instalar dependencias Backend
 python -m venv venv
