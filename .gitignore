@@ -110,6 +110,7 @@ ipython_config.py
 # ===================================
 
 # Dependencies
+frontend_systeminfo/node_modules/
 node_modules/
 /.pnp
 .pnp.*
