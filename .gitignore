@@ -111,6 +111,9 @@ ipython_config.py
 
 # Dependencies
 frontend_systeminfo/node_modules/
+frontend_systeminfo/.next/
+frontend_systeminfo/.vscode/
+frontend_systeminfo/.cache/
 node_modules/
 /.pnp
 .pnp.*
