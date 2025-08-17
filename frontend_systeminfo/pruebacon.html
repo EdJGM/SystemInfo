@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSocket Test</title>
+</head>
+
+<body>
+    <h1>WebSocket Test</h1>
+    <div id="output"></div>
+    <script>
+        const socket = new WebSocket("ws://192.168.1.43:8765");
+        socket.onopen = () => {
+            document.getElementById("output").innerHTML += "<p>Conectado al servidor</p>";
+        };
+        socket.onmessage = (event) => {
+            document.getElementById("output").innerHTML =
+                "<p>Datos recibidos: " + event.data.substring(0, 100) + "...</p>";
+        };
+        socket.onerror = (error) => {
+            document.getElementById("output").innerHTML +=
+                "<p>Error: " + error + "</p>";
+        };
+    </script>
+</body>
+
+</html>

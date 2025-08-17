@@ -1,0 +1,91 @@
+# Requerimientos del Backend - SystemInfo
+
+# ===================================
+# DEPENDENCIAS PRINCIPALES
+# ===================================
+
+# Monitoreo del sistema
+psutil==5.9.8
+
+# Framework web
+Flask==3.0.2
+Flask-CORS==4.0.0
+
+# Base de datos PostgreSQL
+psycopg2-binary==2.9.9
+
+# WebSocket y comunicación asíncrona
+websockets==12.0
+asyncio-mqtt==0.16.1
+
+# Utilitarios
+python-dotenv==1.0.1
+
+# ===================================
+# DEPENDENCIAS DE DESARROLLO
+# ===================================
+
+# Testing
+pytest==8.0.2
+pytest-cov==4.0.0
+pytest-mock==3.12.0
+pytest-asyncio==0.23.5
+
+# Linting y formateo
+black==24.2.0
+flake8==7.0.0
+isort==5.13.2
+mypy==1.8.0
+
+# Type stubs
+types-psutil==5.9.5.20240316
+
+# ===================================
+# DEPENDENCIAS DE PRODUCCIÓN
+# ===================================
+
+# WSGI Server para producción
+gunicorn==21.2.0
+uvicorn==0.27.1
+
+# Logging mejorado
+structlog==24.1.0
+
+# Monitoreo y métricas
+prometheus-client==0.20.0
+
+# ===================================
+# DEPENDENCIAS OPCIONALES
+# ===================================
+
+# Para análisis de rendimiento
+py-spy==0.3.14
+
+# Para debugging
+pdb++==0.10.3
+
+# Para documentación de API
+flask-swagger-ui==4.11.1
+
+# ===================================
+# NOTAS DE VERSIONES
+# ===================================
+
+# Python >= 3.12 requerido
+# PostgreSQL >= 13 recomendado
+# Para desarrollo en Windows, instalar también:
+# - Visual C++ Build Tools
+# - PostgreSQL development headers
+
+# ===================================
+# INSTALACIÓN
+# ===================================
+
+# Desarrollo:
+# pip install -r requirements.txt
+
+# Producción:
+# pip install -r requirements.txt --no-dev
+
+# Con extras de desarrollo:
+# pip install -e .[dev]

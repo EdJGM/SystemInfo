@@ -1,0 +1,191 @@
+.dashboardContainer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.dashboardHeader {
+    font-size: 2.5em;
+    color: #61dafb;
+    margin-bottom: 20px;
+}
+
+.dashboardUser {
+    font-size: 1.2em;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.dashboardButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.dashboardButton:hover {
+    background-color: #0056b3;
+}
+
+.dashboardHeaderContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboardHeaderImage {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.dashboardGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+    .dashboardGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .dashboardGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+
+.navLinks {
+    display: none;
+}
+
+.navLinks.showMenu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    z-index: 10;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.navLinks a {
+    display: block;
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navLinks a:hover {
+    background-color: #575757;
+    color: white;
+    border-radius: 5px;
+}
+
+.navbar .closeBtn {
+    display: none;
+    /* Oculto por defecto */
+}
+
+.navLinks.showMenu .closeBtn {
+    display: block;
+    /* Mostrar solo cuando el menú está abierto */
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #878484;
+    cursor: pointer;
+}
+
+.userMenu {
+    position: relative;
+    display: inline-block;
+}
+
+.userMenuContent {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.userMenuContent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.userMenuContent a:hover {
+    background-color: #575757;
+}
+
+.userMenu:hover .userMenuContent {
+    display: block;
+}
+
+.userIcon {
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+}
+
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .navLinks {
+        display: flex;
+        position: static;
+        height: auto;
+        background: none;
+        padding-top: 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .closeBtn {
+        display: none;
+    }
+}

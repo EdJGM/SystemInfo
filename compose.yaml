@@ -1,0 +1,41 @@
+services:
+  sonar:
+    image: sonarqube:10.3-community
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_logs:/opt/sonarqube/logs
+      - sonarqube_extensions:/opt/sonarqube/extensions
+    environment:
+      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+    ports:
+      - 9000:9000
+    networks:
+      - sonar
+  ngrok:
+    image: ngrok/ngrok:latest
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    command:
+      - "start"
+      - "--all"
+      - "--config"
+      - "/etc/ngrok.yml"
+    ports:
+      - 4040:4040
+    volumes:
+    - ./ngrok.yml:/etc/ngrok.yml
+    networks:
+      - sonar
+
+networks:
+  sonar:
+
+volumes:
+  sonarqube_data:
+    external: false
+  sonarqube_logs:
+    external: false
+  sonarqube_extensions:
+    external: false
+
+      
